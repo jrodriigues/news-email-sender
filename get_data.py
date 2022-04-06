@@ -6,7 +6,7 @@ import requests
 
 # Get today's date and assign your api_key to the variable api_key
 date = datetime.today().strftime('%Y-%m-%d')
-api_key = 'yourApiKey'
+api_key = 'apiKey=yourApiKey'  # Flag 1
 
 # API endpoint
 api_endpoint = 'https://newsapi.org/v2/'
@@ -17,7 +17,7 @@ everything_endpoint = 'everything?'
 
 """
 
-To know all the parameters available: https://newsapi.org/docs/endpoints
+To know all the parameters available: - https://newsapi.org/docs/endpoints -
 
 """
 

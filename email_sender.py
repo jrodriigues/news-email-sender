@@ -23,10 +23,10 @@ See below today's top news:
 Have a great day!
 """ 
 
-recipients = ['receiversEmailAddress']
+recipients = ['receiversEmailAddress'] # Flag 2
 mimeMessage = MIMEMultipart()
 mimeMessage['to'] = ", ".join(recipients)
-mimeMessage['subject'] = "{get_data.date} top 20 headlines"
+mimeMessage['subject'] = f"{get_data.date} top 20 headlines"
 mimeMessage.attach(MIMEText(emailMsg, 'plain'))
 raw_string = base64.urlsafe_b64encode(mimeMessage.as_bytes()).decode()
 
