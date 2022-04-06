@@ -2,8 +2,6 @@ import json
 from datetime import datetime
 import requests
 
-""" --- First part of the program --- """
-
 # Get today's date and assign your api_key to the variable api_key
 date = datetime.today().strftime('%Y-%m-%d')
 api_key = 'yourApiKey'
